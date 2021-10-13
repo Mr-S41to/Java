@@ -1,0 +1,32 @@
+package aplicacao;
+
+import java.util.Scanner;
+
+import produtos.ProdutoInternacional;
+import produtos.ProdutoNacional;
+import produtos.Produtos;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+	Scanner SC = new Scanner(System.in);	
+
+	System.out.println("Nome do Produto fabricado no Brasil: \n");
+    String nome = SC.nextLine();
+    System.out.println("Preço do Produto: \n");
+    double preço = Double.parseDouble(SC.nextLine());
+    Produtos brasileiro = new ProdutoNacional(nome, preço);
+
+    System.out.println("Nome do Produto Importado: \n");
+    nome = SC.nextLine();
+    System.out.println("Preço do Produto: \n");
+    preço = Double.parseDouble(SC.nextLine());
+    Produtos importado = new ProdutoInternacional(nome, preço);
+
+    System.out.println("Nome do Produto fabricado no Brasil: "+brasileiro.pegarNome());
+    System.out.println("Preço do Produto: "+brasileiro.pegarPreço());
+    System.out.println("Nome do Produto Importado: "+importado.pegarNome());
+    System.out.println("Valor final do Produto: "+importado.pegarPreço());	
+	}
+}

@@ -1,0 +1,5 @@
+package produtos;
+
+public abstract class Produto {
+
+}

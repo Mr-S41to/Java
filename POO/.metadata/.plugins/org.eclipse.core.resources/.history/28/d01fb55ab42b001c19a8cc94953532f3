@@ -1,0 +1,14 @@
+package produtos;
+
+public class ProdutoInternacional extends Produtos {
+	
+	public ProdutoInternacional (String nome double preço) {
+		super(preço, nome);
+	}
+	
+	@Override
+	public double pegarPreço() {
+		return this.preço * 1.6;
+	}
+
+}

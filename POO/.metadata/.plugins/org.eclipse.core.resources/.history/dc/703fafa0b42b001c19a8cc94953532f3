@@ -1,0 +1,16 @@
+package produtos;
+
+public abstract class Produtos {
+	protected String nome;
+	protected double preço;
+	
+	public Produtos(String nome, double preço) {
+		this.nome = nome;
+		this.preço = preço;
+	}
+	public abstract double pegarPreço;
+	public String pegarNome() {
+		return this.nome;		
+	}
+
+}
