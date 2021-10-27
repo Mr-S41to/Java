@@ -17,7 +17,7 @@ public class Main {
         int numcontribuintes = SC.nextInt();
 
         for (int i = 1; i <= numcontribuintes; i++) {
-            System.out.println("F para Pessoa Fisíca ou P para Pessoa Jurídica");
+            System.out.println("'f' para Pessoa Fisíca ou 'p' para Pessoa Jurídica");
             char tipo = SC.next().charAt(0); // para ler o primeiro caractere.
             System.out.println("Nome do Contribuinte: ");
             String nome = SC.next();
@@ -29,8 +29,8 @@ public class Main {
                 list.add(new PessoaFisica(nome, rendaAnual, gastosSaude));
             } else {
                 System.out.println("Número de Funcionários: ");
-                double numFuncionarios = SC.nextDouble();
-                list.add(new PessoaJuridica(nome, rendaAnual, numFuncionarios));
+                double numFuncionarios = SC.nextInt();
+                list.add(new PessoaJuridica(nome, rendaAnual, (int) numFuncionarios));
             }
 
         }
