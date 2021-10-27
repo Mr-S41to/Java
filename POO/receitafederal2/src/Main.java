@@ -1,5 +1,6 @@
 import contribuintes.Pessoa;
 import contribuintes.PessoaFisica;
+import contribuintes.PessoaJuridica;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,6 +27,10 @@ public class Main {
                 System.out.println("Gastos Médicos: ");
                 double gastosSaude = SC.nextDouble();
                 list.add(new PessoaFisica(nome, rendaAnual, gastosSaude));
+            } else {
+                System.out.println("Número de Funcionários: ");
+                double numFuncionarios = SC.nextDouble();
+                list.add(new PessoaJuridica(nome, rendaAnual, numFuncionarios));
             }
 
         }
