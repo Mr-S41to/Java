@@ -10,4 +10,14 @@ public abstract class Pessoa {
         this.rendaAnual = rendaAnual;
     }
 
+    public String getNome() {
+        return this.nome;
+    }
+
+    public double getRendaAnual() {
+        return this.rendaAnual;
+    }
+
+    public abstract double imposto();
+
 }

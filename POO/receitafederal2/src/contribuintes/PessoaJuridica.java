@@ -8,4 +8,17 @@ public class PessoaJuridica extends Pessoa{
         super(nome, rendaAnual);
         this.numFuncionarios = numFuncionarios;
     }
+
+    public int getNumFuncionarios() {
+        return this.numFuncionarios;
+    }
+
+    @Override
+    public double imposto() {
+        if (numFuncionarios > 10) {
+            return getRendaAnual() * 0.14;
+        } else {
+            return  getRendaAnual() * 0.16;
+        }
+    }
 }
