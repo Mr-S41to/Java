@@ -1,5 +1,8 @@
 package contribuintes;
 
+// Matheus N. Saito - 2020262
+// Pedro Wilson Rodrigues de Lima - 2020267
+
 public abstract class Pessoa {
 
     protected String nome;

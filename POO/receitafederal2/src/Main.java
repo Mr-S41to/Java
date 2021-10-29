@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+// Matheus N. Saito - 2020262
+// Pedro Wilson Rodrigues de Lima - 2020267
 public class Main {
 
     public static void main(String[] args) {
@@ -32,6 +34,17 @@ public class Main {
                 double numFuncionarios = SC.nextInt();
                 list.add(new PessoaJuridica(nome, rendaAnual, (int) numFuncionarios));
             }
+
+            System.out.println("Impostos Tributados: ");
+            for (Pessoa impPg: list) {
+                System.out.println(impPg.getNome() + ": R$" + (impPg.imposto()));
+            }
+
+            double somarImp = 0.0;
+            for (Pessoa impPG : list) {
+                somarImp += impPG.imposto();
+            }
+            System.out.println("Impostos Totais: R$ " + somarImp);
 
         }
     }

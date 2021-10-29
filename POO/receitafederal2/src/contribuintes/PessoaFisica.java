@@ -1,5 +1,8 @@
 package contribuintes;
 
+// Matheus N. Saito - 2020262
+// Pedro Wilson Rodrigues de Lima - 2020267
+
 public class PessoaFisica extends Pessoa {
 
     private double gastosSaude;
@@ -28,6 +31,5 @@ public class PessoaFisica extends Pessoa {
             impostoBase = 0.0;
         }
         return impostoBase;
-
     }
 }

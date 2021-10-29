@@ -1,5 +1,8 @@
 package contribuintes;
 
+// Matheus N. Saito - 2020262
+// Pedro Wilson Rodrigues de Lima - 2020267
+
 public class PessoaJuridica extends Pessoa{
 
     private int numFuncionarios;
