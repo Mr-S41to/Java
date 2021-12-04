@@ -19,7 +19,7 @@ public class Main {
         int numcontribuintes = SC.nextInt();
 
         for (int i = 1; i <= numcontribuintes; i++) {
-            System.out.println("'f' para Pessoa Fisíca ou 'p' para Pessoa Jurídica");
+            System.out.println("'f' para Pessoa Fisíca ou 'j' para Pessoa Jurídica");
             char tipo = SC.next().charAt(0); // para ler o primeiro caractere.
             System.out.println("Nome do Contribuinte: ");
             String nome = SC.next();
